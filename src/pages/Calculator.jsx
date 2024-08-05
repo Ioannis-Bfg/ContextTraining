@@ -4,6 +4,11 @@ import { DisplayContext } from "../context/displayContext";
 import { useState } from "react";
 
 export default function Calculator() {
+  const [displayValue, setDisplayValue] = useState("");
+  const [firstNum, setFirstNum] = useState("");
+  const [secondNum, setSecondNum] = useState("");
+  const [operator, setOperator] = useState("");
+
   return (
     <>
       <DisplayContext.Provider
